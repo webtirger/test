@@ -1,0 +1,104 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+#root>div {
+  width   : 100%;
+  position: relative;
+}
+
+.top {
+  width           : 800px;
+  height          : 100px;
+  /* background-color: tomato; */
+  position        : absolute;
+  top             : 0px;
+  left            : 0;
+  right           : 0;
+  margin          : 0 auto;
+  display         : flex;
+  justify-content : space-around;
+  align-items     : center;
+  font-size       : 50px;
+  background-image: url(./img/bg5.jpg);
+}
+
+.bottom {
+  position           : absolute;
+  width              : 800px;
+  height             : 500px;
+  top                : 100px;
+  left               : 0;
+  right              : 0;
+  margin             : 0 auto;
+  overflow           : hidden;
+  /* background-color: aquamarine; */
+  background-image   : url(./img/bg1.jpg);
+
+}
+
+.start {
+  width       : 0;
+  height      : 0;
+  border      : solid 20px;
+  display     : inline-block;
+  border-color: transparent transparent transparent red;
+}
+
+.paused {
+  width       : 0;
+  height      : 0;
+  border      : solid 20px;
+  display     : inline-block;
+  border-color: red;
+}
+
+.snake {
+  display          : flex;
+  /* flex-direction: row-reverse; */
+  /* width         : 150px; */
+}
+
+/* .snake>div{float:left;} */
+.snake {
+  /* width: 150px; */
+}
+
+/* .snake>div{position: absolute;} */
+.snake_head {
+  height          : 50px;
+  width           : 50px;
+  /* background-color: lime; */
+}
+.snake_head img{
+  width: 50px;height: 50px;
+  /* transform: rotate(90deg); */
+}
+
+.snake_body {
+  height          : 50px;
+  width           : 50px;
+  /* background-color: yellow; */
+}
+.snake_body img{width: 50px;height: 50px;}
+.snake_tail {
+  height          : 50px;
+  width           : 50px;
+  /* background-color: blueviolet; */
+}
+.snake_tail img{width: 50px;height: 50px;}
+.snake_ate img {
+  width    : 50px;
+  height   : 50px;
+  animation: shine 0.5s alternate infinite;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
