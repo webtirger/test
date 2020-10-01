@@ -5,7 +5,7 @@ export default class Food extends React.Component{
 static propTypes={
     RandomFood:PropTypes.func.isRequired
 }
-    render(){
+    render(){  
         return (
             <div className="snake_ate"><img src={require("../img/enemy.png")} alt=""/></div>
         )
